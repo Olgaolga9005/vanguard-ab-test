@@ -1,20 +1,33 @@
 # Vanguard A/B Test Analysis
 
 ## Overview
-This project analyzes the impact of a redesigned digital interface for Vanguard using an A/B testing framework. The objective is to determine whether the new design improves user performance, efficiency, and overall experience compared to the existing interface.
+This project was developed as part of a statistics and data analytics module. The objective is to analyze a digital A/B test conducted by Vanguard to evaluate whether a redesigned user interface improves the client experience and increases process completion rates.
+
+The experiment compares two groups:
+- **Control Group**: Existing interface  
+- **Test Group**: Redesigned digital experience  
+
+The main goal is to determine if the new design leads to better performance and usability.
 
 ---
 
 ## Approach
-- **Data Cleaning & EDA**: Prepared and merged datasets, created key features (`age_group`, `session_duration`, `completed`)
-- **KPIs Defined**:
+
+### Data Sources
+- **Client Profiles**: Demographics (age, gender, accounts, balance)
+- **Digital Footprints**: User interactions across the process
+- **Experiment Roster**: Control vs Test assignment
+
+### Methodology
+- Data cleaning, merging, and feature engineering
+- Exploratory Data Analysis (EDA)
+- KPI definition:
   - Completion Rate
   - Error Rate (backward + skipped steps)
   - Session Duration
   - Digital Engagement (`calls_6_mnth`)
-- **Hypothesis Testing**:
-  - Statistical tests (z-test, t-test)
-  - Cost-effectiveness threshold (≥ 5%)
+- Hypothesis testing (z-test and t-test)
+- Cost-effectiveness validation (minimum +5% improvement)
 
 ---
 
@@ -30,7 +43,8 @@ This project analyzes the impact of a redesigned digital interface for Vanguard 
 ---
 
 ## Conclusion
-The redesign improves completion rate significantly but introduces usability trade-offs, including higher error rates and longer session times.  
+The redesigned interface significantly improves completion rate and meets the cost-effectiveness threshold. However, it introduces higher error rates and longer session durations, indicating usability challenges.
+
 The reduction in help-related calls suggests improved perceived usability.
 
 **Final Verdict: Partially Validated**
@@ -38,18 +52,22 @@ The reduction in help-related calls suggests improved perceived usability.
 ---
 
 ## Visualization
-- Built interactive dashboards in Tableau
-- Explored results by variation and demographics (age groups)
-- Designed story-driven insights for decision-making
+Interactive dashboards were built in Tableau to:
+- Compare Control vs Test performance
+- Analyze results by demographics (e.g., age groups)
+- Support storytelling and business insights
 
 ---
 
 ## Tools
-Python (Pandas, SciPy), Jupyter, Tableau
+- Python (Pandas, NumPy, SciPy)
+- Jupyter Notebook
+- Tableau
 
 ---
 
 ## Next Steps
-- Reduce friction in key steps
-- Improve efficiency (time and errors)
-- Refine UX before full rollout
+- Improve navigation to reduce errors
+- Optimize process efficiency
+- Perform deeper segmentation analysis
+- Validate findings with user feedback
