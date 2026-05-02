@@ -1,0 +1,3 @@
+variation,average_calls_6_mnth,median_calls_6_mnth,average_logons_6_mnth,median_logons_6_mnth,total_clients
+control,3.13,3.0,6.17,6.0,23435
+test,3.06,3.0,6.1,6.0,26866
