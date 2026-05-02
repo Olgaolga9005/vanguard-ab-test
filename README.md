@@ -1,32 +1,55 @@
-# vanguard-ab-test
+# Vanguard A/B Test Analysis
 
-You must submit the following deliverables in order for the project to be deemed complete:
+## Overview
+This project analyzes the impact of a redesigned digital interface for Vanguard using an A/B testing framework. The objective is to determine whether the new design improves user performance, efficiency, and overall experience compared to the existing interface.
 
-A new repository with the name vanguard-ab-test on your GitHub account.
+---
 
-Working code that meets all technical requirements, built by you.
+## Approach
+- **Data Cleaning & EDA**: Prepared and merged datasets, created key features (`age_group`, `session_duration`, `completed`)
+- **KPIs Defined**:
+  - Completion Rate
+  - Error Rate (backward + skipped steps)
+  - Session Duration
+  - Digital Engagement (`calls_6_mnth`)
+- **Hypothesis Testing**:
+  - Statistical tests (z-test, t-test)
+  - Cost-effectiveness threshold (≥ 5%)
 
-At least 1 Jupyter notebook is required
+---
 
-Include your functions in .py files
+## Key Results
 
-Additional needed files for your work, such as a Tableau file
+| Metric            | Control | Test | Outcome |
+|------------------|--------|------|--------|
+| Completion Rate  | 49.76% | 58.48% | +8.72pp (significant) |
+| Error Rate       | 7.09%  | 9.66%  | Increased |
+| Session Duration | 187.7s | 195.9s | Slower |
+| Calls (6 months) | 3.13   | 3.06   | Fewer help requests |
 
-A README with the completed project documentation.
+---
 
-The URL of the slides for your project presentation.
+## Conclusion
+The redesign improves completion rate significantly but introduces usability trade-offs, including higher error rates and longer session times.  
+The reduction in help-related calls suggests improved perceived usability.
 
-Presentation: When presenting your work, there are many important factors to consider, such as the content of your presentation and the way you deliver it.
+**Final Verdict: Partially Validated**
 
-Remember to allow time to rehearse the presentation beforehand.
+---
 
-See “Presentation” section below for guidelines.
+## Visualization
+- Built interactive dashboards in Tableau
+- Explored results by variation and demographics (age groups)
+- Designed story-driven insights for decision-making
 
-Paste your own repository’s link in the Student Portal Project Activity.
+---
 
-Note: Each student should have their own repository to submit.
-Links to the data you are using (sources) and your Kanban board (Trello) in the README.
+## Tools
+Python (Pandas, SciPy), Jupyter, Tableau
 
+---
 
-Feel free to present the project in as you feel best represents your work, but below you will find a suggested format for the presentation as a guide.
-
+## Next Steps
+- Reduce friction in key steps
+- Improve efficiency (time and errors)
+- Refine UX before full rollout
