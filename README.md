@@ -35,9 +35,9 @@ The main goal is to determine if the new design leads to better performance and 
 
 | Metric           |Control | Test   | Outcome |
 |------------------|--------|--------|---------|
-| Completion Rate  | 49.7%  | 58.4%  | +17.5% Completion rate Increased   |
+| Completion Rate  | 49.7%  | 58.4%  | +17.5% Completion rate Improved   |
 | Error Rate       | 7.09%  | 9.66%  | 2.5pp Error Rate Increased (+8pp for the first step) |
-| Session Duration | 6.54min| 6.00min| 8.1% Faster for Completed sessions  |
+| Session Duration | 6.54min| 6.00min| 8.1% Improved Duration for the Completed sessions  |
 | Calls (6 months) | 3.13   | 3.06   | 2.2% Fewer help requests per client |
 
 ---
